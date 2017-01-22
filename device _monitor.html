@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>device_monitor</title>
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="css/themes.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_47cay2h9s39v0a4i.css">
+</head>
+
+<body>
+    <div class="page-group">
+        <div class="page" id="device-list">
+            <!-- 标题栏 -->
+            <header class="bar bar-nav">
+                <a class="icon icon-left pull-left" href="#">返回</a>
+                <a class="iconfont icon-yingyongkuai pull-right" href=" " style="font-size: 26px;"></a>
+                <h1 class="title">设备管理</h1>
+             </header>
+
+            <div class="content">
+                <div class="list-block media-list" style="margin: 0;">
+                    <ul>
+                        <li class="card">
+                            <div class="card-header">
+                                <div class="item-title">设备1</div>
+                                <div class="item-after">
+                                    <a class="icon icon-right" href="#device-one"></a>
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                <div class="item-title">设备2</div>
+                                <div class="item-after">
+                                    <a class="icon icon-right" href="#device-two"></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="device-one">
+            <header class="bar bar-nav">
+                <a class="icon icon-left pull-left" href="#device-list">返回</a>
+                <a class="iconfont icon-gengduo pull-right" href=" " style="font-size: 40px;"></a>
+                <h1 class="title">设备1</h1>
+            </header>
+            <div class="content">
+                <div class="content-main">
+                    <div class="box">
+                        <div class="row row1">
+                            <h1>优</h1>
+                            <p>手动运行</p>
+                            <p>室内空气质量&nbsp;优</p>
+                        </div>
+                        <div class="row row2">
+                            <div class="col-20">
+                                <span class="iconfont icon-fengsu" >低</span>
+                            </div>
+                            <div class="col-80">
+                                <span class="iconfont icon-yudiwubeijing">80%</span>
+                            </div>
+                            <div class="col-20">
+                                <span class="iconfont icon-qianbi01">10c</span>
+                            </div>
+                            <div class="col-20">
+                                <span class="iconfont icon-fangxiangpan" >50%</span>
+                            </div>
+                            <div class="col-20">
+                                <span class="iconfont icon-80dianliang" >80%</span>
+                            </div>
+                            <div class="col-40">
+                                <a href="#" class=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-footer">
+                    <div class="row">
+                        <div class="col-25">
+                            <span class="iconfont icon-kaiguan1"></sapn>
+                		</div>
+                		<div class="col-25">
+                			<span style="line-height: 3rem;text-align: center;">AUTO</sapn>
+                		</div>
+                		<div class="col-25">
+                			<span class="iconfont icon-kaiguan1"></sapn>
+                		</div>
+                		<div class="col-25">
+                			<span class="iconfont icon-clock"></sapn>
+                		</div>
+                	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
+    <script type="text/javascript">
+    	var width=document.documentElement.clientWidth;
+    	var set_width=(width/375)*20;
+    	var root=document.documentElement;
+    	root.style.cssText="font-size:"+set_width+'px!important';
+    </script>
+</body>
+</html>
