@@ -12,7 +12,7 @@ $(function() {
                 $.actions(groups);
             });
 
-            //刷新
+            //信息下拉刷新
             $(document).on("pageInit", "#pull-to-refresh-content", function(e, id, page) {
                 var $content = $(page).find(".content").on('refresh', function(e) {
                     // 模拟2s的加载过程
@@ -31,3 +31,4 @@ $(function() {
               });
                 $.init();
             });
+
