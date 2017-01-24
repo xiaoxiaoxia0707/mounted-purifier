@@ -1,19 +1,17 @@
-.content-empty{
-	padding: 2rem 0;
-}
 .content-block {
     width: 100%;
     background-color: #1ba365;
     margin: 0;
+    padding: 1rem 0 0;
 }
-.row1{
-	width: 14rem;
-	height: 14rem;
+.device-frame{
+	width: 15rem;
+	height: 15rem;
 	border-radius: 50%;
-	border: 0.2rem dashed #ffffff;
+	border: 0.08rem dashed #ffffff;
 	margin: 0 auto;
 }
-.row1 h1,.row1 p{
+ .device-frame h1,.device-frame h4,.device-frame h6{
 	font-family: '微软雅黑 Regular', '微软雅黑';
     font-weight: 400;
     font-style: normal;
@@ -21,37 +19,84 @@
     text-align: center;
     margin: 0;
 }
-.row h1{
-	 font-size: 4rem;
+.device-frame h1{
+	 font-size: 5rem;
+     padding-top: 1rem;
 }
-.row1 p{
-	margin-top: 0.9rem;
-	font-size: 0.9rem;
+.device-frame h4{
+	font-size: 1.5rem;
 }
-.row2 {
+.device-frame h6{
+    font-size: 1rem;
+}
+.device-information{
     display: block;
-    padding-top: 4rem;
+    padding-top: 1rem;
 }
-.row2 span{
-	font-size: 1.2rem;
+.device-information span{
+	font-size: 1rem;
+    display: block;
+    color: #FFFFFF;
 }
-.row2,
-.row3 {
+.device-information,
+.device-button{
     margin: auto;
 }
-.row3{
-    padding-top: 3rem;
+/*按钮*/
+.device-button{
+    width: 100%;
+    height: 16.6%;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    .content-block {
-        padding-top: 1rem;
+.bt{
+    float: left;
+    margin: 4.6%;
+}
+/*@media方法*/
+@media only screen and (min-height: 568px) {
+    .content-block{
+        padding: 3rem 0 0;
     }
-    .row2 {
-        padding-top: 0;
+    .device-information{
+        padding-top: 3rem;
+    }
+    .bt{
+        margin: 5.6% 4.6% 5.6% 4.6%;
     }
 }
-
-/*/圆形1*/
+@media only screen and (min-height: 667px) {
+    .content-block{
+        padding: 5rem 0 0;
+    }
+    .device-information{
+        padding-top: 5rem;
+    }
+    .bt{
+        margin: 7.5% 5.8% 7.5% 5.8%;
+    }
+}
+@media only screen and (device-width: 412px) {
+    .content-block{
+        padding: 4.5rem 0 0;
+    }
+    .device-information{
+        padding-top: 4.5rem;
+    }
+    .bt{
+        margin: 6.5% 6% 6.5% 6%;
+    }
+}
+@media only screen and (min-height: 732px) {
+    .content-block{
+        padding: 6rem 0 0;
+    }
+    .device-information{
+        padding-top: 6rem;
+    }
+    .bt{
+        margin: 7% 6% 7% 6%;
+    }
+}
+/*圆形1*/
 .circular {
     width: 2.5rem;
     height: 2.5rem;
@@ -71,4 +116,7 @@
 .circular .iconfont {
     padding-top: 0.25rem;
     font-size: 1.25rem;
+}
+.circular:active{
+    background-color: #999999;
 }
