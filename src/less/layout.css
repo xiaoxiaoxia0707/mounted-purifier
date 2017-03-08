@@ -1,0 +1,51 @@
+/*绑定事件*/
+.content .binding-p {
+  text-align: center;
+}
+.content .binding-button {
+  width: 8rem;
+  margin: 2.1875rem auto;
+}
+.content .binding-button a {
+  height: 2rem;
+  line-height: 2rem;
+}
+.content .icon {
+  font-size: 6rem !important;
+  color: #bcbcbc;
+  text-align: center;
+}
+.element {
+  font-size: 16px;
+}
+.element [data-dpr="2"] {
+  font-size: 32px;
+}
+.element [data-dpr="3"] {
+  font-size: 48px;
+}
+/*设备管理*/
+.content .card,
+.content .card-content,
+.content .list-block {
+  height: 2rem;
+  margin: 0;
+}
+.content li {
+  height: 1rem;
+}
+.content .list-block .item-link {
+  height: 1rem;
+  min-height: 0;
+  font-size: 0.3rem;
+}
+.content .list-block .item-link .item-inner {
+  padding: 0 ;
+  margin: 0;
+  line-height: 1rem;
+  min-height: 0;
+  color: #333333;
+}
+.content div .item-inner {
+  height: 1rem;
+}
