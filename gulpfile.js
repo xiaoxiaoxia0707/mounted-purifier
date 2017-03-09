@@ -21,6 +21,11 @@ gulp.task('testLess', function() {
         .pipe(concat('sm.min.css'))
         .pipe(gulp.dest('dist/css'));
 });
+// 脚本
+gulp.task('scripts', function() {
+     gulp.src(['src/js/lib/*.js'])
+         .pipe(gulp.dest('dist/js/lib'));
+});
 //html
 gulp.task('html', function() {
     gulp.src('src/*.html')
@@ -28,10 +33,10 @@ gulp.task('html', function() {
 });
 // 清理
 gulp.task('clean', function() {
-    return gulp.src(['dist/css'], { read: false })
+    return gulp.src(['dist/css','dist/js'], { read: false })
         .pipe(clean());
 });
 // 预设任务
 gulp.task('default', function(callback) {
-    runSequence('clean', 'testLess','html', callback);
+    runSequence('clean', 'testLess', 'scripts','html', callback);
 });
