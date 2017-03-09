@@ -43,3 +43,34 @@
   background-color: #1ba365;
 }
 /*消息设置*/
+.settings-content .card,
+.settings-content .card-content,
+.settings-content .list-block,
+.settings-content .list-block .item-content,
+.settings-content .list-block .item-inner,
+.settings-content .list-block .item-title-row.list-block .item-input,
+.settings-content .label-switch,
+.settings-content .checkbox {
+  margin: 0;
+  height: 1.5rem;
+  min-height: 0;
+}
+.settings-content .settings-card {
+  margin-top: 0.5rem;
+}
+.settings-content .item-inner {
+  padding: 0;
+}
+.settings-content .item-inner .item-title {
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+.settings-content .item-text {
+  font-size: 0.4rem;
+  line-height: 0.5rem;
+  height: 0.5rem;
+  width: 6rem;
+}
+.settings-content .label-switch {
+  float: right;
+}
