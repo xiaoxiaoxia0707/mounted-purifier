@@ -64,6 +64,10 @@
 		height: 0.5rem;
 		width: 6rem;
 	}
+	//设置开关按钮位置与大小
+	& .label-switch {
+		width: 2rem;
+	}
 	& .checkbox {
 		width: 1.8rem;
 		height: 1rem;
@@ -80,4 +84,43 @@
 }
 
 /*解除设备*/
-//
+.remove-content {
+	//设备1信息
+	& .remove-card,.card-content,.list-block,ul {
+		height: 6rem;
+		margin: 0;
+	}
+	& li,.item-inner,{
+		height: 1.5rem;
+		min-height: 0;
+	}
+	& .item-inner .item-title {
+		font-size: 0.5rem;
+		padding-left: 0.75rem;
+	}
+	& .item-inner .item-after {
+		font-size: 0.45rem;
+	}
+	& .item-inner .one-item-after {
+		color: #b9b8ba;
+	}
+	& .item-link {
+		padding-right: 0.6rem;
+	}
+	//设置二维码的字体
+	& .item-after .icon {
+		font-size: 0.75rem !important;
+		color: #b9b8ba;
+	}
+	//设置二维码的字体靠进向左的图标
+	& .list-block .item-link .item-inner {
+		padding-right: 0.75rem;
+	}
+	//解绑设备按钮
+	& .remove-button {
+		margin: 1.5rem 1rem 0 1rem;
+	}
+	& .remove-button a {
+		font-size: 0.5rem;	
+	}
+}

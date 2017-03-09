@@ -25,6 +25,8 @@ gulp.task('testLess', function() {
 gulp.task('scripts', function() {
      gulp.src(['src/js/lib/*.js'])
          .pipe(gulp.dest('dist/js/lib'));
+     gulp.src(['src/js/*.js'])
+         .pipe(gulp.dest('dist/js'));
 });
 //html
 gulp.task('html', function() {

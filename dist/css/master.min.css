@@ -74,6 +74,9 @@
   height: 0.5rem;
   width: 6rem;
 }
+.settings-content .label-switch {
+  width: 2rem;
+}
 .settings-content .checkbox {
   width: 1.8rem;
   height: 1rem;
@@ -88,3 +91,41 @@
   float: right;
 }
 /*解除设备*/
+.remove-content .remove-card,
+.remove-content .card-content,
+.remove-content .list-block,
+.remove-content ul {
+  height: 6rem;
+  margin: 0;
+}
+.remove-content li,
+.remove-content .item-inner {
+  height: 1.5rem;
+  min-height: 0;
+}
+.remove-content .item-inner .item-title {
+  font-size: 0.5rem;
+  padding-left: 0.75rem;
+}
+.remove-content .item-inner .item-after {
+  font-size: 0.45rem;
+}
+.remove-content .item-inner .one-item-after {
+  color: #b9b8ba;
+}
+.remove-content .item-link {
+  padding-right: 0.6rem;
+}
+.remove-content .item-after .icon {
+  font-size: 0.75rem !important;
+  color: #b9b8ba;
+}
+.remove-content .list-block .item-link .item-inner {
+  padding-right: 0.75rem;
+}
+.remove-content .remove-button {
+  margin: 1.5rem 1rem 0 1rem;
+}
+.remove-content .remove-button a {
+  font-size: 0.5rem;
+}
