@@ -5,22 +5,21 @@
 		height: 6.5rem;
 		margin: 0;
 	}
-	& .card-header, .list-block,.item-content,.item-inner,.item-input,.item-input input{
-		height: 1.5rem;
+	& .card-header, .card-header .list-block,.card-header .item-content,.card-header .item-inner,.card-header .item-input,.card-header .item-input input{
+		height: 1.5rem; 
 		font-size: 0.5rem;
 		min-height: 0;
 	}
-	& .item-content {
+	& .item-content,.card-content .item-inner,.card-content .item-input textarea{
 		padding: 0;
 	}
-	& .card-content {
+	& .card-content .item-input {
+		margin: 0;
+	}
+	& .card-content,.card-content .list-block,.card-content .align-top,.card-content .item-inner,.card-content .item-input,.card-content .item-input textarea {
 		height: 5rem;
 		font-size: 0.5rem;
-		color: #a5a4a2;
 	}
-	& .card-content-inner {
-		padding: 0;
-	} 
 	& .service-input {
 		border: 0;
 	}
@@ -31,8 +30,7 @@
 	}
 	//提交按钮
 	& .save-button {
-		position: fixed;
-		bottom:0;
+		margin-top: 1.5rem;
 		width: 100%;
 	}
 	& .save-button a {
@@ -41,3 +39,5 @@
 		background-color: #1ba365;
 	}
 }
+
+/*消息设置*/

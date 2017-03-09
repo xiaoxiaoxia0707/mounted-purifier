@@ -4,25 +4,31 @@
   margin: 0;
 }
 .service-content .card-header,
-.service-content .list-block,
-.service-content .item-content,
-.service-content .item-inner,
-.service-content .item-input,
-.service-content .item-input input {
+.service-content .card-header .list-block,
+.service-content .card-header .item-content,
+.service-content .card-header .item-inner,
+.service-content .card-header .item-input,
+.service-content .card-header .item-input input {
   height: 1.5rem;
   font-size: 0.5rem;
   min-height: 0;
 }
-.service-content .item-content {
+.service-content .item-content,
+.service-content .card-content .item-inner,
+.service-content .card-content .item-input textarea {
   padding: 0;
 }
-.service-content .card-content {
+.service-content .card-content .item-input {
+  margin: 0;
+}
+.service-content .card-content,
+.service-content .card-content .list-block,
+.service-content .card-content .align-top,
+.service-content .card-content .item-inner,
+.service-content .card-content .item-input,
+.service-content .card-content .item-input textarea {
   height: 5rem;
   font-size: 0.5rem;
-  color: #a5a4a2;
-}
-.service-content .card-content-inner {
-  padding: 0;
 }
 .service-content .service-input {
   border: 0;
@@ -32,8 +38,7 @@
   height: 3rem;
 }
 .service-content .save-button {
-  position: fixed;
-  bottom: 0;
+  margin-top: 1.5rem;
   width: 100%;
 }
 .service-content .save-button a {
@@ -41,3 +46,4 @@
   font-size: 0.5rem;
   background-color: #1ba365;
 }
+/*消息设置*/
