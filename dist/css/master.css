@@ -74,6 +74,17 @@
   height: 0.5rem;
   width: 6rem;
 }
+.settings-content .checkbox {
+  width: 1.8rem;
+  height: 1rem;
+  margin-top: 0.3rem;
+}
+.settings-content .checkbox:after,
+.settings-content .checkbox:before {
+  width: 0.8rem;
+  height: 0.8rem;
+}
 .settings-content .label-switch {
   float: right;
 }
+/*解除设备*/
