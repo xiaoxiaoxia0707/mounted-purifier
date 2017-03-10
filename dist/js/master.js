@@ -4,6 +4,21 @@ $(document).on('click', '.button-danger', function() {
         $.alert('解绑后无法控制设备');
     });
 });
+
+/*监控页面按钮部分*/
+//AUTO按钮
+$("#auto").click(function() {
+    if ($(".auto-title").text() == "手动运行") {
+        $(".auto-title").text("自动运行");
+    } else {
+        $(".auto-title").text("手动运行");
+    }
+});
+
+
+
+
+/*车载进化器首页*/
 //车载进化器页面的弹出框
 $(document).on('click', '#headpage', function() {
     $.modal({
@@ -14,9 +29,7 @@ $(document).on('click', '#headpage', function() {
         }]
     })
 });
-/*车载进化器首页*/
 //个人中心按钮
-
-    $("#personal-external").click(function(){
-        $(".personal-center").toggle();
-    })
+$("#personal-external").click(function() {
+    $(".personal-center").toggle();
+})
