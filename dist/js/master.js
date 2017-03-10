@@ -6,6 +6,16 @@ $(document).on('click', '.button-danger', function() {
 });
 
 /*监控页面按钮部分*/
+//开关按钮
+$("#kaiguan").click(function() {
+    if ($(".auto-title").text() == "手动运行") {
+        $(".auto-title").text("已关机");
+        $(".state-card").css("background-color", "#999999");
+    } else {
+        $(".auto-title").text("手动运行");
+        $(".state-card").css("background-color", "#1ba365");
+    }
+});
 //AUTO按钮
 $("#auto").click(function() {
     if ($(".auto-title").text() == "手动运行") {
@@ -14,9 +24,29 @@ $("#auto").click(function() {
         $(".auto-title").text("手动运行");
     }
 });
-
-
-
+//风速按钮
+$(document).on('click', '#fengsu', function() {
+    var buttons1 = [{
+            text: '高速',
+            label: true
+        }, {
+            text: '中速',
+            label: true
+        }, {
+            text: '低速',
+            label: true
+        }
+    ];
+var buttons2 = [{
+    text: '取消'
+}];
+var groups = [buttons1, buttons2]; 
+$.actions(groups);
+});
+//定时开关机
+ $("#clock").datetimePicker({
+    value: ['1985', '12', '04', '9', '34']
+  });
 
 /*车载进化器首页*/
 //车载进化器页面的弹出框
