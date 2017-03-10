@@ -14,3 +14,8 @@ $(document).on('click', '#headpage', function() {
         }]
     })
 });
+/*车载进化器首页*/
+//个人中心按钮
+$("#personal-external").click(function() {
+    $(".personal-center").toggle();
+})
