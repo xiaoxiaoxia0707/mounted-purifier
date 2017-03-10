@@ -1,0 +1,14 @@
+/*信息中心页面*/
+.center-card,
+.card-content {
+  height: 6rem;
+}
+.center-card .list-block,
+.card-content .list-block {
+  margin: 0 0.25rem;
+  padding-top: 0.35rem;
+}
+.center-card .warn-item-text,
+.card-content .warn-item-text {
+  height: 1.5rem;
+}

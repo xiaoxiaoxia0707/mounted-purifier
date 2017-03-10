@@ -1,93 +1,131 @@
+,
 <html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=2">
     <title>信息中心</title>
-    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.css">
-    <link rel="stylesheet" type="text/css" href="../dist/css/master.min.css">
+    <script type="text/javascript" src="./js/lib/flexible.js"></script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../dist/css/sm.min.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/columns.min.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_kv9j9k33cys0pb9.css">
 </head>
 
 <body>
-    <div class="page" id="#">
+    <!-- content应该拥有"pull-to-refresh-content"类,表示启用下拉刷新 -->
+    <div class="content pull-to-refresh-content" data-ptr-distance="55">
+        <!-- 默认的下拉刷新层 -->
+        <div class="pull-to-refresh-layer">
+            <div class="preloader"></div>
+            <div class="pull-to-refresh-arrow"></div>
+        </div>
+        <!-- 下面是正文 -->
         <div class="content">
-            <div class="content pull-to-refresh-content" data-ptr-distance="55">
-                <div class="pull-to-refresh-layer">
-                    <div class="preloader"></div>
-                    <div class="pull-to-refresh-arrow"></div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="list-block media-list">
-                                <ul>
-                                    <li>
-                                        <div class="item-inner">
-                                            <div class="item-title-row">
-                                                <div class="item-title">开机提醒</div>
-                                            </div>
-                                            <div class="item-subtitle color-gray">12月15日</div>
-                                            <div class="item-text">
-                                                <span class="color-gray">设备名称:</span>&nbsp;设备1
-                                                <br/>
-                                                <span class="color-gray">开机类型:</span>&nbsp;手动开机
-                                            </div>
-                                            <span class="color-gray">开机结果:</span><a href="#" class="">&nbsp;成功</a>
-                                        </div>
-                                        <div class="item-text">设备开机成功！</div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+            <div class="card center-card">
+                <div class="card-content">
+                    <div class="list-block media-list">
+                        <ul>
+                            <li>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">开机提醒</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <span>设备名称:&nbsp;设备1</span>
+                                        <br/>
+                                        <span>设备编码:&nbsp;XXXXXX</span>
+                                        <br/>
+                                        <span>在线状态:&nbsp;在线</span>
+                                        <br/>
+                                        <span>最后时间:&nbsp;2016年12月5日 02:34:08</span>
+                                        <br/>
+                                        <span>设备状态:&nbsp;手动开机</span>
+                                    </div>
+                                    <div class="item-subtitle">您的设备手动开机成功！</div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <br/>
-                <div class="list-block media-list">
-                    <ul>
-                        <li>
-                            <div class="item-inner">
-                                <div class="item-title-row">
-                                    <div class="item-title">关机提醒</div>
+            </div>
+            <div class="card center-card">
+                <div class="card-content">
+                    <div class="list-block media-list">
+                        <ul>
+                            <li>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">关机提醒</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <span>设备名称:&nbsp;设备1</span>
+                                        <br/>
+                                        <span>设备编码:&nbsp;XXXXXX</span>
+                                        <br/>
+                                        <span>在线状态:&nbsp;离线</span>
+                                        <br/>
+                                        <span>最后时间:&nbsp;2016年12月5日 02:34:08</span>
+                                        <br/>
+                                        <span>设备状态:&nbsp;定时关机</span>
+                                    </div>
+                                    <div class="item-subtitle">您的设备已定时关机！</div>
                                 </div>
-                                <div class="item-subtitle color-gray">12月15日</div>
-                                <div class="item-text">
-                                    <span class="color-gray">设备名称:</span>&nbsp;设备1
-                                    <br/>
-                                    <span class="color-gray">开机类型:</span>&nbsp;低电量关机
-                                </div>
-                                <span class="color-gray">开机结果:</span><a href="#" class="">&nbsp;成功</a>
-                            </div>
-                            <div class="item-text">设备低电量保护自动关机！</div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <br/>
-                <div class="list-block media-list">
-                    <ul>
-                        <li>
-                            <div class="item-inner">
-                                <div class="item-title-row">
-                                    <div class="item-title">过网过期提醒</div>
+            </div>
+            <div class="card center-card">
+                <div class="card-content">
+                    <div class="list-block media-list">
+                        <ul>
+                            <li>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">滤网过期提醒</div>
+                                    </div>
+                                    <div class="item-text warn-item-text">
+                                        <span>设备名称:&nbsp;设备1</span>
+                                        <br/>
+                                        <span>报警时间:&nbsp;2016年12月5日 02:34:08</span>
+                                    </div>
+                                    <div class="item-subtitle">此设备滤网已逾期使用15天，请及时更换滤网！</div>
                                 </div>
-                                <div class="item-subtitle color-gray">12月15日</div>
-                                <div class="item-text">
-                                    <span class="color-gray">设备名称:</span>&nbsp;&nbsp;设备1
-                                    <br/>
-                                    <span class="color-gray">滤网使用时间:</span>&nbsp;1个月1天
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card center-card">
+                <div class="card-content">
+                    <div class="list-block media-list">
+                        <ul>
+                            <li>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">关机提醒</div>
+                                    </div>
+                                    <div class="item-text">
+                                        <span>设备名称:&nbsp;设备1</span>
+                                        <br/>
+                                        <span>设备编码:&nbsp;XXXXXX</span>
+                                        <br/>
+                                        <span>在线状态:&nbsp;离线</span>
+                                        <br/>
+                                        <span>最后时间:&nbsp;2016年12月5日 02:34:08</span>
+                                        <br/>
+                                        <span>设备状态:&nbsp;定时关机</span>
+                                    </div>
+                                    <div class="item-subtitle">您的设备已定时关机！</div>
                                 </div>
-                                <br />
-                                <div class="item-text">滤网已长时间未更换，请及时更换滤网！
-                                </div>
-                                <div class="item-footer" style="border-top:1px solid gray;">详情</div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    
     <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
     <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
     <script type="text/javascript" src="./js/index.js"></script>

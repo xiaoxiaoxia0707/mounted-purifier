@@ -20,6 +20,11 @@ gulp.task('testLess', function() {
         .pipe(gulp.dest('dist/css'))
         .pipe(concat('sm.min.css'))
         .pipe(gulp.dest('dist/css'));
+    gulp.src('src/less/columns.less')
+        .pipe(less())
+        .pipe(gulp.dest('dist/css'))
+        .pipe(concat('columns.min.css'))
+        .pipe(gulp.dest('dist/css'));
 });
 // 脚本
 gulp.task('scripts', function() {
