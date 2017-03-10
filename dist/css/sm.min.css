@@ -264,8 +264,8 @@ a {
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-a:active {
-  color: #0a8ddf;
+a:hover {
+  background-color: #c9c9c9;
 }
 .page {
   position: absolute;
@@ -1009,9 +1009,10 @@ a:active {
 .bar-tab .tab-item {
   position: relative;
   display: table-cell;
-  width: 1%;
+  width: 2.5rem;
   height: 2.5rem;
   color: #929292;
+  border: 1px solid #c9c9c9;
   text-align: center;
   vertical-align: middle;
 }
@@ -1038,14 +1039,14 @@ a:active {
 .bar-tab .tab-item .icon {
   top: 0.05rem;
   height: 1.2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.2rem;
   padding-top: 0;
   padding-bottom: 0;
 }
 .bar-tab .tab-item .icon ~ .tab-label {
   display: block;
-  font-size: 0.55rem;
+  font-size: 0.5rem;
   position: relative;
   top: 0.15rem;
 }
@@ -2724,7 +2725,6 @@ input[type="button"].button {
   border-radius: 0.35rem 0.35rem 0 0;
   position: relative;
   background: #e8e8e8;
-  color: red;
   font-size: 0.5rem;
 }
 .modal-inner:after {
@@ -2756,7 +2756,7 @@ input[type="button"].button {
 }
 .modal-title {
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.5rem;
   text-align: center;
 }
 .modal-title + .modal-text {

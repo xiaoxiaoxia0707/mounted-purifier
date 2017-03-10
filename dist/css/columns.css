@@ -12,3 +12,11 @@
 .card-content .warn-item-text {
   height: 1.5rem;
 }
+/*车载净化器的首页*/
+.tab-item.external {
+  font-size: 0.5rem;
+}
+.headpage-content .icon {
+  font-size: 2.5rem !important;
+  color: #009900;
+}
