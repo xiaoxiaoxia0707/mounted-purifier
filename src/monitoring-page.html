@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="stylesheet" href="../dist/css/sm.min.css">
     <link rel="stylesheet" type="text/css" href="../dist/css/columns.min.css">
-    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_kv9j9k33cys0pb9.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_9uy0nzk6shkkpgb9.css">
 </head>
 
 <body>
@@ -24,15 +24,21 @@
                     </div>
                     <div class="monitoring-message">
                         <div class="row">
-                            <div class="col-32">
+                            <div class="col-32" id="row-one">
                                 <span class="icon iconfont icon-quanguowendu"></span>10&#8451;
                                 <br/>
                                 <span class="icon iconfont icon-fengsushezhi"></span> 低
                             </div>
-                            <div class="col-32">
+                            <div class="col-32" id="row-two">
                                 <span class="icon iconfont icon-icon"></span>80%
                                 <br />
                                 <span class="icon iconfont icon-mchezai"></span> 50%
+                            </div>
+                            <div class="col-32" id="row-three">
+                                <span class="icon iconfont icon-caozuo_denglizi"></span>
+                            </div>
+                             <div class="col-32" id="row-four">
+                                <span class="icon iconfont  icon-dengpao-copy"></span>
                             </div>
                         </div>
                     </div>
@@ -50,15 +56,17 @@
                             <span class="icon iconfont icon-shizhong" id="clock"></span>
                         </div>
                     </div>
+                    <div class="monitoring-button2"></div>
                     <div class="monitoring-slide">
-                    	<span class="icon icon-up"></span>
+                        <a href="#"><span class="icon icon-up" id="slide-up"></span></a>
                     </div>
                 </div>
             </div>
         </div>
-        <script type='text/javascript' src='./js/lib/zepto.js' charset='utf-8'></script>
-        <script type='text/javascript' src='./js/lib/sm.js' charset='utf-8'></script>
-        <script type="text/javascript" src="./js/master.js"></script>
+    </div>
+    <script type='text/javascript' src='./js/lib/zepto.js' charset='utf-8'></script>
+    <script type='text/javascript' src='./js/lib/sm.js' charset='utf-8'></script>
+    <script type="text/javascript" src="./js/master.js"></script>
 </body>
 
 </html>

@@ -51,9 +51,36 @@
 	& .icon {
 		font-size: 0.68rem !important;
 	}
+	& .col-32 {
+		margin-left:0.25rem;
+	}
 }
 //监控的按钮
-.monitoring-button {
+#row-three,#row-four{
+	color: #d5d5d5;
+	margin-top: 1rem;	
+}
+#row-three {
+	margin-left: 2rem;
+}
+#row-four {
+	margin-left: 0.5rem;
+}
+.monitoring-button2,#row-three,#row-four{
+	display: none;
+}
+
+#processbar{  
+   background:#95CA0D;  
+   float:left; 
+   height: 2rem;
+   text-align:center; 
+   margin-left: 0;
+    border: none;
+    font-weight: bold;
+    color: #000;
+ }  
+.monitoring-button,.monitoring-button2  {
 	margin: 1rem auto;
 	width: 100%;
 	height: 1.5rem;
@@ -85,6 +112,9 @@
 //监控的上滑动按钮
 .monitoring-slide {
 	text-align: center;
+	& #slide-up {
+		border: none;
+	}
 	& .icon-up {
 		font-size: 1rem;
 		font-size: bold;

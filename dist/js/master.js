@@ -27,26 +27,83 @@ $("#auto").click(function() {
 //风速按钮
 $(document).on('click', '#fengsu', function() {
     var buttons1 = [{
-            text: '高速',
-            label: true
-        }, {
-            text: '中速',
-            label: true
-        }, {
-            text: '低速',
-            label: true
-        }
-    ];
-var buttons2 = [{
-    text: '取消'
-}];
-var groups = [buttons1, buttons2]; 
-$.actions(groups);
+        text: '高速',
+        label: true
+    }, {
+        text: '中速',
+        label: true
+    }, {
+        text: '低速',
+        label: true
+    }];
+    var buttons2 = [{
+        text: '取消'
+    }];
+    var groups = [buttons1, buttons2];
+    $.actions(groups);
 });
 //定时开关机
- $("#clock").datetimePicker({
-    value: ['1985', '12', '04', '9', '34']
-  });
+$(document).on('click', '#clock', function() {
+    var buttons1 = [{
+        text: '<div>定时开机</div><span>0小时</span>',
+        label: true
+    }, {
+        text: '<div>定时关机</div><span>1小时</span>',
+        label: true
+
+    }, {
+        text: '<span>1.5小时</span>',
+        label: true
+    }];
+    var buttons2 = [{
+        text: '确定'
+    }];
+    var groups = [buttons1, buttons2];
+    $.actions(groups);
+});
+//上滑按钮
+$(".monitoring-slide").click(function() {
+    $(".state-card").css({ "height": "10rem", "padding-top": "0.98rem" });
+    $(".monitoring-state").css({ "height": "6rem", "border": "none", "margin-bottom": "0.98rem" });
+    $(".monitoring-message #row-one, #row-two").css({ "height": "2.04rem", "margin-left": "0.25rem", "line-height": "1.02rem" });
+    $(".monitoring-message #row-one").html("<span>室温</span> 10&#8451;<br/><span>风速</span> 低");
+    $(".monitoring-message #row-two").html("<span>温度</span> 80%<br/><span>滤网</span> 50%");
+    $(".monitoring-button2").css({ "display": "block" });
+    $(".monitoring-button2").html("<div><span class='icon iconfont icon-caozuo_denglizi' id='denglizi'></span></div><div><span class='icon iconfont icon-dengpao-copy' id='deng'></span></div><div><span class='icon iconfont icon-kongqilvwang' id='wang'></span></div><div> <a href='./equipment-remove.html'><span class='icon iconfont icon-sandian' id='more'></span></a></div>");
+    $("#slide-up").hide();
+    //等离子按钮
+    $("#denglizi").click(function() {
+        $("#row-three").css({ "display": "block" });
+    });
+    //气氛灯按钮
+    $("#deng").click(function() {
+        $("#row-four").css({ "display": "block" });
+    });
+    //进度条
+    function setProcess() {
+        var processbar = document.getElementById("processbar");
+        processbar.style.width = parseInt(processbar.style.width) + 1 + "%";
+        processbar.innerHTML = processbar.style.width;
+        if (processbar.style.width == "100%") {
+            window.clearInterval(bartimer);
+        }
+    }
+    var bartimer = window.setInterval(function() { setProcess(); }, 100);
+    window.onload = function() {
+        bartimer;
+    }
+    $("#wang").click(function() {
+        $("#wang").html("<div class='processcontainer'> <div id='processbar' style='width:0%;'></div></div>");
+    })
+});
+$(".monitoring-button").click(function() {
+    $(".state-card").css({ "height": "12rem", "padding-top": "1.5rem" });
+    $(".monitoring-state").css({ "height": "7rem;", "border": " 0.1rem #fff dashed", "margin-bottom": "1.5rem" });
+    $(".monitoring-message #row-one").html("<span class='icon iconfont icon-quanguowendu'></span>10&#8451;<br/><span class='icon iconfont icon-fengsushezhi'></span> 低");
+    $(".monitoring-message #row-two").html("<span class='icon iconfont icon-icon'></span>80%<br/><span class='icon iconfont icon-mchezai'></span> 50%");
+    $(".monitoring-button2").hide();
+    $("#slide-up").show();
+});
 
 /*车载进化器首页*/
 //车载进化器页面的弹出框

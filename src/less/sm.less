@@ -262,7 +262,7 @@ p {
   margin: 1em 0;
 }
 a {
-  color: #0894ec;
+  color: #d5d5d5;
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -2688,28 +2688,26 @@ input[type="button"].button {
 .preloader-indicator-overlay.modal-overlay-visible,
 .popup-overlay.modal-overlay-visible {
   visibility: visible;
-  opacity: 1;
 }
 .popup-overlay {
   z-index: 10200;
 }
 .modal {
-  width: 8.5rem;
+  width: 100%;
   position: absolute;
   z-index: 11000;
   left: 75%;
   margin-left: -6.75rem;
   margin-top: 0;
-  top: 50%;
   text-align: center;
   border-radius: 0.35rem;
   opacity: 0;
+  display: none;
   -webkit-transform: translate3d(0, 0, 0) scale(1.185);
           transform: translate3d(0, 0, 0) scale(1.185);
   -webkit-transition-property: -webkit-transform, opacity;
           transition-property: transform, opacity;
   color: #3d4145;
-  display: none;
 }
 .modal.modal-in {
   opacity: 1;
@@ -3087,8 +3085,8 @@ input.modal-text-input.modal-text-input-double + input.modal-text-input {
   z-index: 10400;
   background: #fff;
   box-sizing: border-box;
-  display: none;
   overflow: auto;
+  display: none;
   -webkit-overflow-scrolling: touch;
   -webkit-transition-property: -webkit-transform;
           transition-property: transform;
