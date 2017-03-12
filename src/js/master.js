@@ -69,7 +69,7 @@ $(document).ready(function(){
 $(".monitoring-button").click(function() {
     $(".state-card").css({ "height": "10rem", "padding-top": "0.98rem" });
     $(".monitoring-state").css({ "height": "6rem", "border": "none", "margin-bottom": "0.98rem" });
-    $(".monitoring-message").html("<div class='message'><span>室温</span>100&#8451;</div><div class='message'><span>风速</span> 低</div><div class='message'><span>湿度</span>80%</div><div class='message'><span>滤网</span> 50%</div>");
+    $(".monitoring-message").html("<div class='message'><p>室温&nbsp;100&#8451;</p></div><div class='message'><p>风速&nbsp;低</p></div><div class='message'><p>湿度&nbsp;80%</p></div><div class='message'><p>滤网&nbsp;50%</p> </div>");
     $(".monitoring-button2").css({ "display": "block" });
      //等离子按钮
     $("#denglizi").click(function() {
