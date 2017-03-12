@@ -127,38 +127,3 @@
   font-size: bold;
   color: #d5d5d5;
 }
-/*车载净化器的首页*/
-.tab-item.external {
-  font-size: 0.5rem;
-}
-.headpage-content .icon {
-  font-size: 2.5rem !important;
-  color: #009900;
-}
-.personal-center {
-  width: 2.4rem;
-  height: 3rem;
-  background-color: #fff;
-  position: relative;
-  float: right;
-  top: 12.2rem;
-  display: block;
-}
-.personal-center ul,
-.personal-center li {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-.personal-center li {
-  height: 1.5rem;
-  line-height: 1.5rem;
-  text-align: center;
-  border: 1px solid #c9c9c9;
-}
-.personal-center li:hover {
-  background-color: #c9c9c9;
-}
-.personal-center a {
-  color: #929292;
-}
