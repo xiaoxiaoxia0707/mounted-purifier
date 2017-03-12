@@ -1,123 +1,127 @@
 /*信息中心页面*/
-.center-card,.card-content {
-	height: 6rem;
-	& .list-block {
-		margin: 0 0.25rem;
-		padding-top: 0.35rem;
-	}
-	& .warn-item-text {
-		height: 1.5rem;
-	}
-	& .item-subtitle {
-		color: #0099cc;
-	}
+
+.center-card,
+.card-content {
+    height: 6rem;
+    & .list-block {
+        margin: 0 0.25rem;
+        padding-top: 0.35rem;
+    }
+    & .warn-item-text {
+        height: 1.5rem;
+    }
+    & .item-subtitle {
+        color: #0099cc;
+    }
 }
+
 
 /*监控页面*/
+
 //监控的状态
 .monitoring-content {
-	& .state-card {
-		margin: 0;
-		height: 12rem;
-		background-color: #1ba365; 
-		padding-top: 1.5rem;
-	}
-	& .monitoring-state {
-		height: 7rem;
-		width: 7rem;
-		border: 0.1rem #fff dashed;
-		border-radius:50%;
-		overflow: auto;
-		margin: 0 auto;
-		margin-bottom: 1.5rem;
-		text-align: center;
-		color: #fff;
-	}
-	& h5{
-		font-size: 0.5rem;
-		margin: 0.1rem auto 0;
-		font-weight: normal;
-	}
-	& h6{
-		font-size: 0.4rem;
-		margin: 0.3rem auto 0;
-		font-weight: normal;
-	}
-}
-//监控信息
-.monitoring-message {
-	color: #fff;
-	font-weight: normal;
-	& .icon {
-		font-size: 0.68rem !important;
-	}
-	& .col-32 {
-		margin-left:0.25rem;
-	}
-}
-//监控的按钮
-#row-three,#row-four{
-	color: #d5d5d5;
-	margin-top: 1rem;	
-}
-#row-three {
-	margin-left: 2rem;
-}
-#row-four {
-	margin-left: 0.5rem;
-}
-.monitoring-button2,#row-three,#row-four{
-	display: none;
+    & .state-card {
+        margin: 0;
+        height: 12rem;
+        background-color: #1ba365;
+        padding-top: 1.5rem;
+    }
+    & .monitoring-state {
+        height: 7rem;
+        width: 7rem;
+        border: 0.1rem #fff dashed;
+        border-radius: 50%;
+        overflow: auto;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        color: #fff;
+    }
+    & h5 {
+        font-size: 0.5rem;
+        margin: 0.1rem auto 0;
+        font-weight: normal;
+    }
+    & h6 {
+        font-size: 0.4rem;
+        margin: 0.3rem auto 0;
+        font-weight: normal;
+    }
 }
 
-#processbar{  
-   background:#95CA0D;  
-   float:left; 
-   height: 2rem;
-   text-align:center; 
-   margin-left: 0;
+//监控信息
+.monitoring-message {
+    color: #fff;
+    font-weight: normal;
+    & .icon {
+        font-size: 0.68rem !important;
+    }
+    & .col-32 {
+        margin-left: 0.25rem;
+    }
+}
+
+//监控信息上滑动的改动
+.row {
+    & #row-three,
+    #row-four {
+        color: #d5d5d5;
+        margin-top: 1rem;
+    }
+    & #row-three {
+        margin-left: 2rem;
+    }
+    & #row-four {
+        margin-left: 0.5rem;
+    }
+}
+//监控按钮第二排的按钮，等离子，氛围灯先隐藏
+.monitoring-button2,
+#row-three,
+#row-four {
+    display: none;
+}
+//重置滤网的进度条
+#processbar {
+    background: #95CA0D;
+    float: left;
+    height: 2rem;
+    text-align: center;
+    margin-left: 0;
     border: none;
     font-weight: bold;
     color: #000;
- }  
-.monitoring-button,.monitoring-button2  {
-	margin: 1rem auto;
-	width: 100%;
-	height: 1.5rem;
-	text-align: center;
-	color: #d5d5d5;
-	& div{
-		width: 25%;
-		float: left;
-	}
-	& span:hover,div div:hover {
-		background-color: #0099cc;
-	}
-	& .icon, div div{
-		width: 1.5rem;
-		height: 1.5rem;
-		line-height: 1.5rem;
-		border-radius:50%;
-		border: 0.05rem #d5d5d5 solid;
-	}
-	& .icon {
-		font-size: 0.75rem !important;
-	}
-	& div div {
-		font-size: 0.5rem;
-		margin-left: 0.55rem;
-	}
-}
-//监控的上滑动按钮
-.monitoring-slide {
-	text-align: center;
-	& #slide-up {
-		border: none;
-	}
-	& .icon-up {
-		font-size: 1rem;
-		font-size: bold;
-		color: #d5d5d5;
-	}
 }
 
+//监控的按钮  
+.monitoring-button,
+.monitoring-button2 {
+    margin: 1rem auto;
+    width: 100%;
+    height: 1.5rem;
+    text-align: center;
+    color: #d5d5d5;
+    & div {
+        width: 25%;
+        float: left;
+    }
+    & span:hover,
+    div div:hover {
+        background-color: #0099cc;
+    }
+    & .icon,
+    div div {
+        width: 1.5rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        border-radius: 50%;
+        border: 0.05rem #d5d5d5 solid;
+    }
+    & .icon {
+        font-size: 0.75rem !important;
+    }
+    & div div {
+        font-size: 0.5rem;
+        margin-left: 0.55rem;
+    }
+}

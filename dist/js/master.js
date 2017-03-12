@@ -62,7 +62,8 @@ $(document).on('click', '#clock', function() {
     $.actions(groups);
 });
 //上滑按钮
-$(".monitoring-slide").click(function() {
+$(document).ready(function(){
+$(".monitoring-button").click(function() {
     $(".state-card").css({ "height": "10rem", "padding-top": "0.98rem" });
     $(".monitoring-state").css({ "height": "6rem", "border": "none", "margin-bottom": "0.98rem" });
     $(".monitoring-message #row-one, #row-two").css({ "height": "2.04rem", "margin-left": "0.25rem", "line-height": "1.02rem" });
@@ -78,7 +79,7 @@ $(".monitoring-slide").click(function() {
     $("#denglizi").click(function() {
         $("#row-three").css({ "display": "block" });
     });
-    
+
     //进度条
     function setProcess() {
         var processbar = document.getElementById("processbar");
@@ -96,6 +97,8 @@ $(".monitoring-slide").click(function() {
         $("#wang").html("<div class='processcontainer'> <div id='processbar' style='width:0%;'></div></div>");
     })
 });
+});
+
 $(".monitoring-button").click(function() {
     $(".state-card").css({ "height": "12rem", "padding-top": "1.5rem" });
     $(".monitoring-state").css({ "height": "7rem;", "border": " 0.1rem #fff dashed", "margin-bottom": "1.5rem" });

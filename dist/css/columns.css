@@ -54,15 +54,15 @@
 .monitoring-message .col-32 {
   margin-left: 0.25rem;
 }
-#row-three,
-#row-four {
+.row #row-three,
+.row #row-four {
   color: #d5d5d5;
   margin-top: 1rem;
 }
-#row-three {
+.row #row-three {
   margin-left: 2rem;
 }
-#row-four {
+.row #row-four {
   margin-left: 0.5rem;
 }
 .monitoring-button2,
@@ -117,15 +117,4 @@
 .monitoring-button2 div div {
   font-size: 0.5rem;
   margin-left: 0.55rem;
-}
-.monitoring-slide {
-  text-align: center;
-}
-.monitoring-slide #slide-up {
-  border: none;
-}
-.monitoring-slide .icon-up {
-  font-size: 1rem;
-  font-size: bold;
-  color: #d5d5d5;
 }
