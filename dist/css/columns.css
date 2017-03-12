@@ -90,7 +90,13 @@
 .monitoring-button2 span:hover,
 .monitoring-button div div:hover,
 .monitoring-button2 div div:hover {
-  background-color: #4DFFFF;
+  background-color: #1aa365;
+}
+.monitoring-button span:hover,
+.monitoring-button2 span:hover,
+.monitoring-button div div:hover,
+.monitoring-button2 div div:hover {
+  color: #fff;
 }
 .monitoring-button .icon,
 .monitoring-button2 .icon,
