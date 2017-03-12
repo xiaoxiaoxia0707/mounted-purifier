@@ -71,14 +71,15 @@ $(".monitoring-slide").click(function() {
     $(".monitoring-button2").css({ "display": "block" });
     $(".monitoring-button2").html("<div><span class='icon iconfont icon-caozuo_denglizi' id='denglizi'></span></div><div><span class='icon iconfont icon-dengpao-copy' id='deng'></span></div><div><span class='icon iconfont icon-kongqilvwang' id='wang'></span></div><div> <a href='./equipment-remove.html'><span class='icon iconfont icon-sandian' id='more'></span></a></div>");
     $("#slide-up").hide();
-    //等离子按钮
-    $("#denglizi").click(function() {
-        $("#row-three").css({ "display": "block" });
-    });
     //气氛灯按钮
     $("#deng").click(function() {
         $("#row-four").css({ "display": "block" });
     });
+    //等离子按钮
+    $("#denglizi").click(function() {
+        $("#row-three").css({ "display": "block" });
+    });
+    
     //进度条
     function setProcess() {
         var processbar = document.getElementById("processbar");

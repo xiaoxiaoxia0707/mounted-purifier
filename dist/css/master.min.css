@@ -3,6 +3,9 @@
   height: 10.5rem;
   margin: 0;
 }
+.service-content .list-block {
+  width: 9rem;
+}
 .service-content .card-header,
 .service-content .card-header .list-block,
 .service-content .card-header .item-content,
