@@ -93,6 +93,12 @@
   width: 25%;
   float: left;
 }
+.monitoring-button span:hover,
+.monitoring-button2 span:hover,
+.monitoring-button div div:hover,
+.monitoring-button2 div div:hover {
+  background-color: #0099cc;
+}
 .monitoring-button .icon,
 .monitoring-button2 .icon,
 .monitoring-button div div,
@@ -111,10 +117,6 @@
 .monitoring-button2 div div {
   font-size: 0.5rem;
   margin-left: 0.55rem;
-}
-.monitoring-button div:hover,
-.monitoring-button2 div:hover {
-  color: #0099cc;
 }
 .monitoring-slide {
   text-align: center;

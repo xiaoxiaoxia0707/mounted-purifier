@@ -69,7 +69,6 @@ $(".monitoring-slide").click(function() {
     $(".monitoring-message #row-one").html("<span>室温</span> 10&#8451;<br/><span>风速</span> 低");
     $(".monitoring-message #row-two").html("<span>温度</span> 80%<br/><span>滤网</span> 50%");
     $(".monitoring-button2").css({ "display": "block" });
-    $(".monitoring-button2").html("<div><span class='icon iconfont icon-caozuo_denglizi' id='denglizi'></span></div><div><span class='icon iconfont icon-dengpao-copy' id='deng'></span></div><div><span class='icon iconfont icon-kongqilvwang' id='wang'></span></div><div> <a href='./equipment-remove.html'><span class='icon iconfont icon-sandian' id='more'></span></a></div>");
     $("#slide-up").hide();
     //气氛灯按钮
     $("#deng").click(function() {
