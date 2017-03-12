@@ -47,27 +47,20 @@
 .monitoring-message {
   color: #fff;
   font-weight: normal;
+  padding-top: 0.8rem;
+  height: 2rem;
 }
 .monitoring-message .icon {
   font-size: 0.68rem !important;
 }
-.monitoring-message .col-32 {
-  margin-left: 0.25rem;
+.monitoring-message .message {
+  width: 2.5rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  float: left;
 }
-.row #row-three,
-.row #row-four {
-  color: #d5d5d5;
-  margin-top: 1rem;
-}
-.row #row-three {
-  margin-left: 2rem;
-}
-.row #row-four {
-  margin-left: 0.5rem;
-}
-.monitoring-button2,
-#row-three,
-#row-four {
+.monitoring-button2 {
   display: none;
 }
 #processbar {
@@ -82,11 +75,11 @@
 }
 .monitoring-button,
 .monitoring-button2 {
-  margin: 1rem auto;
+  margin: 1rem auto 0rem;
   width: 100%;
-  height: 1.5rem;
+  height: 2.25rem;
   text-align: center;
-  color: #d5d5d5;
+  color: gray;
 }
 .monitoring-button div,
 .monitoring-button2 div {
@@ -97,7 +90,7 @@
 .monitoring-button2 span:hover,
 .monitoring-button div div:hover,
 .monitoring-button2 div div:hover {
-  background-color: #0099cc;
+  background-color: #4DFFFF;
 }
 .monitoring-button .icon,
 .monitoring-button2 .icon,
@@ -107,14 +100,22 @@
   height: 1.5rem;
   line-height: 1.5rem;
   border-radius: 50%;
-  border: 0.05rem #d5d5d5 solid;
+  border: 0.05rem gray solid;
 }
 .monitoring-button .icon,
 .monitoring-button2 .icon {
   font-size: 0.75rem !important;
 }
+.monitoring-button #clock,
+.monitoring-button2 #clock {
+  line-height: 1.35rem;
+}
 .monitoring-button div div,
 .monitoring-button2 div div {
   font-size: 0.5rem;
   margin-left: 0.55rem;
+}
+.monitoring-button a,
+.monitoring-button2 a {
+  color: gray;
 }

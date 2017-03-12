@@ -43,43 +43,43 @@ $(document).on('click', '#fengsu', function() {
     $.actions(groups);
 });
 //定时开关机
-$(document).on('click', '#clock', function() {
-    var buttons1 = [{
-        text: '<div>定时开机</div><span>0小时</span>',
-        label: true
-    }, {
-        text: '<div>定时关机</div><span>1小时</span>',
-        label: true
+// $(document).on('click', '#clock', function() {
+//     var buttons1 = [{
+//         text: '<div>定时开机</div><span>0小时</span>',
+//         label: true
+//     }, {
+//         text: '<div>定时关机</div><span>1小时</span>',
+//         label: true
 
-    }, {
-        text: '<span>1.5小时</span>',
-        label: true
-    }];
-    var buttons2 = [{
-        text: '确定'
-    }];
-    var groups = [buttons1, buttons2];
-    $.actions(groups);
-});
+//     }, {
+//         text: '<span>1.5小时</span>',
+//         label: true
+//     }];
+//     var buttons2 = [{
+//         text: '确定'
+//     }];
+//     var groups = [buttons1, buttons2];
+//     $.actions(groups);
+// });
+$("#clock").datetimePicker({
+    value: ['1985', '12', '04', '9', '34']
+  });
 //上滑按钮
 $(document).ready(function(){
 $(".monitoring-button").click(function() {
     $(".state-card").css({ "height": "10rem", "padding-top": "0.98rem" });
     $(".monitoring-state").css({ "height": "6rem", "border": "none", "margin-bottom": "0.98rem" });
-    $(".monitoring-message #row-one, #row-two").css({ "height": "2.04rem", "margin-left": "0.25rem", "line-height": "1.02rem" });
-    $(".monitoring-message #row-one").html("<span>室温</span> 10&#8451;<br/><span>风速</span> 低");
-    $(".monitoring-message #row-two").html("<span>温度</span> 80%<br/><span>滤网</span> 50%");
+    $(".monitoring-message").html("<div class='message'><span>室温</span>100&#8451;</div><div class='message'><span>风速</span> 低</div><div class='message'><span>湿度</span>80%</div><div class='message'><span>滤网</span> 50%</div>");
     $(".monitoring-button2").css({ "display": "block" });
-    $("#slide-up").hide();
+     //等离子按钮
+    $("#denglizi").click(function() {
+        $("#row-three").css({ "display": "block" });
+    });
     //气氛灯按钮
     $("#deng").click(function() {
         $("#row-four").css({ "display": "block" });
     });
-    //等离子按钮
-    $("#denglizi").click(function() {
-        $("#row-three").css({ "display": "block" });
-    });
-
+   
     //进度条
     function setProcess() {
         var processbar = document.getElementById("processbar");
@@ -107,19 +107,3 @@ $(".monitoring-button").click(function() {
     $(".monitoring-button2").hide();
     $("#slide-up").show();
 });
-
-/*车载进化器首页*/
-//车载进化器页面的弹出框
-$(document).on('click', '#headpage', function() {
-    $.modal({
-        title: '感谢关注车载净化器！',
-        text: '车载进化器，关注您的每一次呼吸！点击下方"<a>我的设备</a>",检测一下您车内的环境，为它做一次深呼吸吧！尚未绑定设备的，请先点击下方"<a>设备绑定</a>"选择设备绑定，扫描设备二维码进行绑定。',
-        buttons: [{
-            text: '确认'
-        }]
-    })
-});
-//个人中心按钮
-$("#personal-external").click(function() {
-    $(".personal-center").toggle();
-})

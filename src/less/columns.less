@@ -53,32 +53,23 @@
 .monitoring-message {
     color: #fff;
     font-weight: normal;
+    padding-top: 0.8rem;
+    height: 2rem;
     & .icon {
         font-size: 0.68rem !important;
     }
-    & .col-32 {
-        margin-left: 0.25rem;
+    & .message {
+        width: 2.5rem;
+        height: 1.2rem;
+        line-height: 1.2rem;
+       text-align:center;
+        float: left;
     }
 }
 
 //监控信息上滑动的改动
-.row {
-    & #row-three,
-    #row-four {
-        color: #d5d5d5;
-        margin-top: 1rem;
-    }
-    & #row-three {
-        margin-left: 2rem;
-    }
-    & #row-four {
-        margin-left: 0.5rem;
-    }
-}
 //监控按钮第二排的按钮，等离子，氛围灯先隐藏
-.monitoring-button2,
-#row-three,
-#row-four {
+.monitoring-button2 {
     display: none;
 }
 //重置滤网的进度条
@@ -96,18 +87,18 @@
 //监控的按钮  
 .monitoring-button,
 .monitoring-button2 {
-    margin: 1rem auto;
+	margin: 1rem auto 0rem;
     width: 100%;
-    height: 1.5rem;
+    height: 2.25rem;
     text-align: center;
-    color: #d5d5d5;
+    color: gray;
     & div {
         width: 25%;
         float: left;
     }
     & span:hover,
     div div:hover {
-        background-color: #0099cc;
+        background-color: #4DFFFF;
     }
     & .icon,
     div div {
@@ -115,13 +106,19 @@
         height: 1.5rem;
         line-height: 1.5rem;
         border-radius: 50%;
-        border: 0.05rem #d5d5d5 solid;
+        border: 0.05rem gray solid;
     }
     & .icon {
         font-size: 0.75rem !important;
     }
+    & #clock {
+    	line-height: 1.35rem;
+    }
     & div div {
         font-size: 0.5rem;
         margin-left: 0.55rem;
+    }
+    & a {
+    	 color: gray;
     }
 }
