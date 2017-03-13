@@ -83,7 +83,7 @@
   margin: 0.75rem auto 0rem;
 }
 .monitoring-button {
-  height: 5rem;
+  height: 5.5rem;
   margin: 0.75rem auto 0rem;
 }
 .monitoring-button1,
@@ -134,4 +134,9 @@
 .monitoring-button1 a,
 .monitoring-button2 a {
   color: gray;
+}
+.monitoring-button1 p,
+.monitoring-button2 p {
+  font-size: 0.5rem;
+  margin: 0.05rem 0 0 0;
 }
