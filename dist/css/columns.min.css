@@ -68,6 +68,7 @@
 }
 .monitoring-button2 {
   display: none;
+  margin: 0.75rem auto 0rem;
 }
 #processbar {
   background: #95CA0D;
