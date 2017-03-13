@@ -66,6 +66,10 @@ $("#clock").datetimePicker({
 });
 
 //等离子
-$("#denglizi").click(function(){
-
+$("#icon-denglizi").click(function(){
+    $("#denglizi").toggle();
+});
+//氛围灯
+$("#icon-deng").click(function(){
+    $("#deng").toggle();
 });

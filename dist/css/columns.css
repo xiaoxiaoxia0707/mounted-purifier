@@ -29,9 +29,12 @@
 .monitoring-content .monitoring-state {
   height: 6rem;
   width: 100%;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   margin-bottom: 1.5rem;
   margin-bottom: 0.9rem;
+}
+.monitoring-content .monitoring-state span {
+  color: #fff;
 }
 .monitoring-content .monitoring-round {
   height: 6rem;
@@ -52,6 +55,9 @@
   font-size: 0.4rem;
   margin: 0.3rem auto 0;
   font-weight: normal;
+}
+.monitoring-content .icon {
+  font-size: 1rem !important;
 }
 .monitoring-message {
   color: #fff;
