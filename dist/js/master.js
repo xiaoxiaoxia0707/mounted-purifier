@@ -66,10 +66,15 @@ $("#clock").datetimePicker({
 });
 
 //等离子
-$("#icon-denglizi").click(function(){
+$("#icon-denglizi").click(function() {
     $("#denglizi").toggle();
 });
 //氛围灯
-$("#icon-deng").click(function(){
+$("#icon-deng").click(function() {
     $("#deng").toggle();
 });
+//重置过滤网
+$(document).on('click', '#wang', function() {
+    $.alert('<div>重置滤网已经完成</div>');
+});
+
