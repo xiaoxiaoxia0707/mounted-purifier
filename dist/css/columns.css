@@ -107,12 +107,10 @@
   border: 0.05rem #1aa365 solid;
 }
 .monitoring-button1 .icon,
-.monitoring-button2 .icon,
-.monitoring-button1 div div,
-.monitoring-button2 div div {
-  width: 1.5rem;
-  height: 1.5rem;
-  line-height: 1.5rem;
+.monitoring-button2 .icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  line-height: 1.35rem;
   border-radius: 50%;
   border: 0.05rem gray solid;
 }
@@ -124,7 +122,7 @@
 .monitoring-button2 #clock,
 .monitoring-button1 #wang,
 .monitoring-button2 #wang {
-  line-height: 1.32rem;
+  line-height: 1.20rem;
 }
 .monitoring-button1 div div,
 .monitoring-button2 div div {
@@ -137,6 +135,6 @@
 }
 .monitoring-button1 p,
 .monitoring-button2 p {
-  font-size: 0.5rem;
+  font-size: 0.45rem;
   margin: 0.1rem 0 0 0;
 }
