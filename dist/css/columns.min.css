@@ -49,13 +49,12 @@
   font-weight: normal;
   padding-top: 0.8rem;
   height: 2rem;
-  margin: 0 0.4rem 0 0.4rem;
 }
 .monitoring-message .icon {
   font-size: 0.68rem !important;
 }
 .monitoring-message .message {
-  width: 2.3rem;
+  width: 2.5rem;
   height: 1.2rem;
   line-height: 1.2rem;
   text-align: center;
@@ -64,7 +63,7 @@
 }
 .monitoring-message .message p {
   margin: 0;
-  font-size: 0.45rem;
+  font-size: 0.4rem;
 }
 .monitoring-button2 {
   display: none;
@@ -122,7 +121,7 @@
 .monitoring-button2 #clock,
 .monitoring-button1 #wang,
 .monitoring-button2 #wang {
-  line-height: 1.35rem;
+  line-height: 1.32rem;
 }
 .monitoring-button1 div div,
 .monitoring-button2 div div {
