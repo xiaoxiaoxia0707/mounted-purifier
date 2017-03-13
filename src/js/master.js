@@ -72,6 +72,7 @@ $(".monitoring-button").click(function() {
     $(".monitoring-message").css({"padding":"0","height":"1.2rem"});
     $(".monitoring-message").html("<div class='message'><p>室温&nbsp;100&#8451;</p></div><div class='message'><p>风速&nbsp;低</p></div><div class='message'><p>湿度&nbsp;80%</p></div><div class='message'><p>滤网&nbsp;50%</p> </div>");
     $(".monitoring-button2").css({ "display": "block" });
+    $(".")
      //等离子按钮
     $("#denglizi").click(function() {
         $("#row-three").css({ "display": "block" });

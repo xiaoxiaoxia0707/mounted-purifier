@@ -79,30 +79,33 @@
   font-weight: bold;
   color: #000;
 }
-.monitoring-button,
+.monitoring-button {
+  height: 4.5rem;
+  margin: 0.75rem auto 0rem;
+}
+.monitoring-button1,
 .monitoring-button2 {
-  margin: 1rem auto 0rem;
   width: 100%;
   height: 2.25rem;
   text-align: center;
   color: gray;
 }
-.monitoring-button div,
+.monitoring-button1 div,
 .monitoring-button2 div {
   width: 25%;
   float: left;
 }
-.monitoring-button span:hover,
+.monitoring-button1 span:hover,
 .monitoring-button2 span:hover,
-.monitoring-button div div:hover,
+.monitoring-button1 div div:hover,
 .monitoring-button2 div div:hover {
   background-color: #1aa365;
   color: #fff;
   border: 0.05rem #1aa365 solid;
 }
-.monitoring-button .icon,
+.monitoring-button1 .icon,
 .monitoring-button2 .icon,
-.monitoring-button div div,
+.monitoring-button1 div div,
 .monitoring-button2 div div {
   width: 1.5rem;
   height: 1.5rem;
@@ -110,20 +113,22 @@
   border-radius: 50%;
   border: 0.05rem gray solid;
 }
-.monitoring-button .icon,
+.monitoring-button1 .icon,
 .monitoring-button2 .icon {
   font-size: 0.75rem !important;
 }
-.monitoring-button #clock,
-.monitoring-button2 #clock {
+.monitoring-button1 #clock,
+.monitoring-button2 #clock,
+.monitoring-button1 #wang,
+.monitoring-button2 #wang {
   line-height: 1.35rem;
 }
-.monitoring-button div div,
+.monitoring-button1 div div,
 .monitoring-button2 div div {
   font-size: 0.5rem;
   margin-left: 0.55rem;
 }
-.monitoring-button a,
+.monitoring-button1 a,
 .monitoring-button2 a {
   color: gray;
 }
