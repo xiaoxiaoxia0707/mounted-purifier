@@ -65,14 +65,6 @@ $("#clock").datetimePicker({
     value: ['1985', '12', '04', '9', '34']
 });
 
-//等离子
-$("#icon-denglizi").click(function() {
-    $("#denglizi").toggle();
-});
-//氛围灯
-$("#icon-deng").click(function() {
-    $("#deng").toggle();
-});
 //重置过滤网
 $(document).on('click', '#wang', function() {
     $.alert('<div>重置滤网已经完成</div>');

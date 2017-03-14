@@ -22,21 +22,11 @@
 }
 .monitoring-content .state-card {
   margin: 0;
-  height: 9rem;
+  height: 9.5rem;
   background-color: #1ba365;
-  padding-top: 0.9rem;
+  padding-top: 1.2rem;
 }
 .monitoring-content .monitoring-state {
-  height: 6rem;
-  width: 100%;
-  margin-left: 1.5rem;
-  margin-bottom: 1.5rem;
-  margin-bottom: 0.9rem;
-}
-.monitoring-content .monitoring-state span {
-  color: #fff;
-}
-.monitoring-content .monitoring-round {
   height: 6rem;
   width: 6rem;
   border: 0.1rem #fff dashed;
@@ -44,7 +34,8 @@
   overflow: auto;
   text-align: center;
   color: #fff;
-  float: left;
+  margin: 0 auto;
+  margin-bottom: 1.2rem;
 }
 .monitoring-content h5 {
   font-size: 0.5rem;
@@ -62,15 +53,15 @@
 .monitoring-message {
   color: #fff;
   font-weight: normal;
-  height: 1.2rem;
+  height: 1.1rem;
 }
 .monitoring-message .icon {
   font-size: 0.68rem !important;
 }
 .monitoring-message .message {
   width: 2.5rem;
-  height: 1.2rem;
-  line-height: 1.2rem;
+  height: 1.1rem;
+  line-height: 1.1rem;
   text-align: center;
   float: left;
   font-size: 0.5rem;
