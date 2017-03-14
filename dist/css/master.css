@@ -20,9 +20,6 @@
 .service-content .card-footer .item-input textarea {
   padding: 0;
 }
-.service-content .card-footer .item-input textarea {
-  margin-top: 4px;
-}
 .service-content .card-footer .item-input {
   margin: 0;
 }
@@ -36,9 +33,6 @@
 }
 .service-content .service-input {
   border: 0;
-}
-.service-content .card-footer .item-inner {
-  padding: 0;
 }
 .service-content .save-button {
   width: 8rem;
@@ -64,9 +58,6 @@
 .settings-content .settings-card {
   margin-top: 0.5rem;
 }
-.settings-content .item-inner {
-  padding: 0;
-}
 .settings-content .item-inner .item-title {
   font-size: 0.5rem;
   font-weight: bold;
@@ -79,7 +70,6 @@
 }
 .settings-content .label-switch {
   width: 2rem;
-  margin-right: 0.3rem;
 }
 .settings-content .checkbox {
   width: 1.8rem;
