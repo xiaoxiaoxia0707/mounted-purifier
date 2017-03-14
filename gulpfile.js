@@ -22,6 +22,7 @@ gulp.task('testLess', function() {
         .pipe(less())
         .pipe(gulp.dest('dist/css'))
         .pipe(concat('sm.min.css'))
+        .pipe(rev())
         .pipe(gulp.dest('dist/css'));
     gulp.src('src/less/columns.less')
         .pipe(less())
