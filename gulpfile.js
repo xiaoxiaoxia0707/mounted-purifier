@@ -2,32 +2,18 @@ var gulp = require('gulp'),
     less = require('gulp-less'), //less编译css文件
     concat = require('gulp-concat'), //合并
     rev = require('gulp-rev'); //- 对文件名加MD5后缀
-clean = require('gulp-clean'), //清理
+    clean = require('gulp-clean'), //清理
     runSequence = require('run-sequence'); //顺序执行任务
 // 样式
 gulp.task('testLess', function() {
-    gulp.src('src/less/master.less')
+    gulp.src(['src/less/*.less','!src/less/sm.less'])
         .pipe(less())
-
-    .pipe(concat('master.min.css'))
-        .pipe(rev())
-        .pipe(gulp.dest('dist/css'));
-    gulp.src('src/less/layout.less')
-        .pipe(less())
-
-    .pipe(concat('layout.min.css'))
+        .pipe(concat('sm-extend.min.css'))
         .pipe(rev())
         .pipe(gulp.dest('dist/css'));
     gulp.src('src/less/sm.less')
         .pipe(less())
-
-    .pipe(concat('sm.min.css'))
-        .pipe(rev())
-        .pipe(gulp.dest('dist/css'));
-    gulp.src('src/less/columns.less')
-        .pipe(less())
-
-    .pipe(concat('columns.min.css'))
+        .pipe(concat('sm.min.css'))
         .pipe(rev())
         .pipe(gulp.dest('dist/css'));
 });
