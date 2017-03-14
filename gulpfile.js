@@ -9,7 +9,7 @@ gulp.task('testLess', function() {
     gulp.src('src/less/master.less')
         .pipe(less())
         .pipe(gulp.dest('dist/css'))
-        .pipe(concat('master.min.css'))
+        .pipe(concat('master.min.css')) 
         .pipe(rev())
         .pipe(gulp.dest('dist/css'));
     gulp.src('src/less/layout.less')
