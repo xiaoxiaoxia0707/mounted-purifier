@@ -1,5 +1,5 @@
 //解绑设备页面的解绑按钮
-$(document).on('click', '.button-danger', function() {
+$(".button-danger").click(function() {
     $.confirm('解绑设备', function() {
         $.alert('解绑后无法控制设备');
     });
@@ -7,7 +7,7 @@ $(document).on('click', '.button-danger', function() {
 
 /*监控页面按钮部分*/
 //开关按钮
-$("#kaiguan").click(function() {
+$("#switchBtn").click(function() {
     if ($(".auto-title").text() == "手动运行") {
         $(".auto-title").text("已关机");
         $(".state-card").css("background-color", "#999999");
@@ -17,7 +17,7 @@ $("#kaiguan").click(function() {
     }
 });
 //AUTO按钮
-$("#auto").click(function() {
+$("#autoBtn").click(function() {
     if ($(".auto-title").text() == "手动运行") {
         $(".auto-title").text("自动运行");
     } else {
@@ -25,7 +25,7 @@ $("#auto").click(function() {
     }
 });
 //风速按钮
-$(document).on('click', '#fengsu', function() {
+$("#windSpeedBtn").click(function() {
     var buttons1 = [{
         text: '高速',
         label: true
@@ -61,12 +61,12 @@ $(document).on('click', '#fengsu', function() {
 //     var groups = [buttons1, buttons2];
 //     $.actions(groups);
 // });
-$("#clock").datetimePicker({
+//定时开关机
+$("#timeBtn").datetimePicker({
     value: ['1985', '12', '04', '9', '34']
 });
 
 //重置过滤网
-$(document).on('click', '#wang', function() {
+$("#filterScreenBtn").click(function() {
     $.alert('<div>重置滤网已经完成</div>');
 });
-
