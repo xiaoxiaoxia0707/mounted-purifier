@@ -6,9 +6,9 @@
     <script type="text/javascript" src="js/lib/flexible.js"></script>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="stylesheet" href="css/sm-55da968180.css">
-    <link rel="stylesheet" type="text/css" href="css/columns-89dd69d4d6.css">
-    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_30orapuilrgm0a4i.css">
+    <link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" type="text/css" href="css/columns.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_zsbqnh0b9u2tke29.css">
 </head>
 
 <body>
@@ -19,9 +19,12 @@
                 <div class="card state-card">
                     <!-- 监控页面的圆圈的状态-->
                     <div class="monitoring-state">
-                        <h1>优</h1>
-                        <h5 class="auto-title">手动运行</h5>
-                        <h6>PM2.5：25mg/m3<br/>VOC：80mg/m3</h6>
+                        <div>
+                            <h1>优</h1>
+                            <h5 class="auto-title">手动运行</h5>
+                            <h6>PM2.5：25mg/m3<br/>VOC：80mg/m3</h6>
+                        </div>
+                        <a href=""><span class="icon iconfont icon-gengduo"></span></a>
                     </div>
                     <!-- 监控页面的信息部分-->
                     <div class="monitoring-message">
@@ -70,15 +73,13 @@
                             <p>氛围灯</p>
                         </div>
                         <div>
+                            <span class='icon iconfont icon-item-light-indication' id="indicateBtn"></span>
+                            <p>灯光指示</p>
+                        </div>
+                        <div>
                             <span class='icon iconfont icon-kongqilvwang' id='filterScreenBtn'></span>
                             <p>重置滤网</p>
                         </div>
-                        <a href='./equipment-remove.html'>
-                            <div>
-                                <span class='icon iconfont icon-sandian'></span>
-                                <p>更多</p>
-                            </div>
-                        </a>
                     </div>
                 </div>
             </div>

@@ -28,14 +28,28 @@
 }
 .monitoring-content .monitoring-state {
   height: 6rem;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+.monitoring-content .monitoring-state div {
+  margin-left: 2rem;
+  float: left;
+  height: 6rem;
   width: 6rem;
   border: 0.1rem #fff dashed;
   border-radius: 50%;
   overflow: auto;
   text-align: center;
   color: #fff;
-  margin: 0 auto;
-  margin-bottom: 1.2rem;
+}
+.monitoring-content .monitoring-state a {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-left: 0.5rem;
+}
+.monitoring-content .monitoring-state .icon {
+  font-size: 0.75rem;
 }
 .monitoring-content h5 {
   font-size: 0.5rem;
@@ -46,9 +60,6 @@
   font-size: 0.4rem;
   margin: 0.3rem auto 0;
   font-weight: normal;
-}
-.monitoring-content .icon {
-  font-size: 1rem !important;
 }
 .monitoring-message {
   color: #fff;
@@ -102,14 +113,18 @@
   border-radius: 50%;
   border: 0.05rem gray solid;
 }
+.monitoring-button1 #indicateBtn,
+.monitoring-button2 #indicateBtn {
+  font-size: 0.5rem !important;
+}
 .monitoring-button1 .icon,
 .monitoring-button2 .icon {
-  font-size: 0.75rem !important;
+  font-size: 0.75rem!important;
 }
-.monitoring-button1 #clock,
-.monitoring-button2 #clock,
-.monitoring-button1 #wang,
-.monitoring-button2 #wang {
+.monitoring-button1 #filterScreenBtn,
+.monitoring-button2 #filterScreenBtn,
+.monitoring-button1 #timeBtn,
+.monitoring-button2 #timeBtn {
   line-height: 1.20rem;
 }
 .monitoring-button1 div div,

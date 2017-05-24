@@ -1,0 +1,40 @@
+/*定时开机*/
+.time-content .card,
+.time-content .card-content,
+.time-content .list-block,
+.time-content .list-block .item-content,
+.time-content .list-block .item-inner,
+.time-content .list-block .item-title-row.list-block .item-input,
+.time-content .label-switch,
+.time-content .checkbox {
+  margin: 0;
+  height: 1.5rem;
+  min-height: 0;
+}
+.time-content .settings-card {
+  margin-top: 0.5rem;
+}
+.time-content .item-inner .item-title {
+  font-size: 0.8rem;
+}
+.time-content .label-switch {
+  width: 2rem;
+}
+.time-content .checkbox {
+  width: 1.8rem;
+  height: 1rem;
+  margin-top: 0.3rem;
+}
+.time-content .checkbox:after,
+.time-content .checkbox:before {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.time-content .label-switch {
+  float: right;
+}
+.time-content .item-inner input {
+  width: 20rem;
+  border: none;
+}
+/*编辑定时*/

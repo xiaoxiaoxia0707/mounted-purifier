@@ -27,6 +27,13 @@
         padding-top: 1.2rem;
     }
     & .monitoring-state{
+        height:6rem;
+        width: 100%;
+        margin-bottom: 1.2rem;
+    }
+    & .monitoring-state div{
+        margin-left: 2rem;
+        float: left;
        	height: 6rem;
         width: 6rem;
         border: 0.1rem #fff dashed;
@@ -34,8 +41,17 @@
         overflow: auto;
         text-align: center;
         color: #fff;
-        margin:0 auto;
-        margin-bottom: 1.2rem;
+       
+    }
+    & .monitoring-state  a{
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-left: 0.5rem;
+    }
+    & .monitoring-state  .icon{
+        font-size: 0.75rem;
+
     }
     & h5 {
         font-size: 0.5rem;
@@ -46,9 +62,6 @@
         font-size: 0.4rem;
         margin: 0.3rem auto 0;
         font-weight: normal;
-    }
-    & .icon {
-        font-size: 1rem !important;
     }
 }
 
@@ -104,10 +117,13 @@
         border-radius: 50%;
         border: 0.05rem gray solid;
     }
-    & .icon {
-        font-size: 0.75rem !important;
+    & #indicateBtn{
+        font-size: 0.5rem !important;
     }
-    & #clock,#wang {
+    & .icon {
+        font-size: 0.75rem!important;
+    }
+    & #filterScreenBtn,#timeBtn {
     	line-height: 1.20rem;
     }
     & div div {
