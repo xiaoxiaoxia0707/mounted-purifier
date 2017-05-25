@@ -141,3 +141,10 @@
   margin-top: -12px;
   pointer-events: none;
 }
+.bar,
+.title,
+.bar .button-link {
+  font-size: 0.6rem;
+  line-height: 1.25rem;
+  height: 1.25rem;
+}

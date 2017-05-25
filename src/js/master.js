@@ -42,26 +42,6 @@ $("#windSpeedBtn").click(function() {
     var groups = [buttons1, buttons2];
     $.actions(groups);
 });
-//定时开关机
-// $(document).on('click', '#clock', function() {
-//     var buttons1 = [{
-//         text: '<div>定时开机</div><span>0小时</span>',
-//         label: true
-//     }, {
-//         text: '<div>定时关机</div><span>1小时</span>',
-//         label: true
-
-//     }, {
-//         text: '<span>1.5小时</span>',
-//         label: true
-//     }];
-//     var buttons2 = [{
-//         text: '确定'
-//     }];
-//     var groups = [buttons1, buttons2];
-//     $.actions(groups);
-// });
-//定时开关机
 
 //重置过滤网
 $("#filterScreenBtn").click(function() {
