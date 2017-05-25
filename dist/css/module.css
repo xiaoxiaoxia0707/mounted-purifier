@@ -98,7 +98,7 @@
   width: 0.7rem;
   height: 0.7rem;
 }
-.repeatPopup .list-block li:last-child {
+.repeatPopup .list-block li:first-child {
   border-radius: 0 0.5rem;
   height: 1.25rem;
   background-color: #efefef;

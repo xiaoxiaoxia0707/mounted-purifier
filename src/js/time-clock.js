@@ -1,30 +1,30 @@
  //重复的按钮的方法
  function queryRepeat() {
      var popupHTML = '<div class="popup repeatPopup"><div class="list-block media-list">' +
-         '<ul><li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row">' +
+         '<ul><li><a href="#" ><button class="close-popup cancelBtn">取消</button></a><button class="close-popup ensureBtn">确定</button></li><li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row">' +
          '<div class="item-title">星期一</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li><li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期二</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
          '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期三</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
          '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期四</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
          '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期五</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
          '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期六</div></div> </div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
          '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期日</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
-         '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期日</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
-         '<li><a href="#" ><button class="close-popup cancelBtn">取消</button></a><button class="close-popup ensureBtn">确定</button></li></ul></div></div>'
+         '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期日</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li></ul></div>'
+         
      $.popup(popupHTML);
  };
- //显示遮罩层方法
- function showOverlay(){
-    $(".page.page-current").css("opacity","0.1");
- }
-//隐藏遮罩层方法
-function hideOverlay(){
-    $(".page.page-current").css("opacity","1");
- }
+//  //显示遮罩层方法
+//  function showOverlay(){
+//     $(".page.page-current").css("opacity","0.1");
+//  }
+// //隐藏遮罩层方法
+// function hideOverlay(){
+//     $(".page.page-current").css("opacity","1");
+//  }
  //时间编辑器
  /**第一个按钮的时间**/
 
  $("#picker-time1").click(function() {
-    showOverlay();
+    // showOverlay();
      $("#picker-time1").picker({
          cols: [{
              textAlign: 'center',
@@ -40,15 +40,15 @@ function hideOverlay(){
   <h1 class="title">请选择时间</h1>\
   </header>',
          onOpen: function() {
-             $("#open-time1").click(function() { queryRepeat();hideOverlay(); });
+             $("#open-time1").click(function() { queryRepeat();});
          }
      });
 
      $.init();
  });
-
+/**第二个按钮的时间**/
  $("#picker-time2").click(function() {
-     showOverlay();
+     // showOverlay();
      $("#picker-time2").picker({
          cols: [{
              textAlign: 'center',
