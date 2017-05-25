@@ -1,47 +1,153 @@
 /*定时开机*/
-.time-content{
-	//消息设置页面的卡片
-	& .card,.card-content,.list-block,.list-block .item-content,.list-block .item-inner,.list-block .item-title-row.list-block .item-input,.label-switch,.checkbox{
-		margin: 0;
-		height: 1.5rem;
-		min-height: 0; 
-	}
-	& .settings-card {
-		margin-top: 0.5rem;
-	}
-	& .item-inner .item-title {
-		font-size: 0.8rem;
-	}
-	// & .item-text {
-	// 	font-size: 0.4rem;
-	// 	line-height: 0.5rem;
-	// 	height: 0.5rem;
-	// 	width: 6rem;
-	// }
-	//设置开关按钮位置与大小
-	& .label-switch {
-		width: 2rem;
-	}
-	& .checkbox {
-		width: 1.8rem;
-		height: 1rem;
-		margin-top: 0.3rem;
-	}
-	& .checkbox:after,.checkbox:before {
-		width: 0.8rem;
-		height: 0.8rem;
-	}
-	& .label-switch{
-		float: right;
-	}
-	& .item-inner input{
-		width: 20rem;
-		border: none;
-	}
-	
+
+.time-content {
+    //消息设置页面的卡片
+    & .card,
+    .card-content,
+    .list-block,
+    .list-block .item-content,
+    .list-block .item-inner,
+    .list-block .item-title-row.list-block .item-input,
+    .label-switch,
+    .checkbox {
+        margin: 0;
+        height: 1.5rem;
+        min-height: 0;
+    }
+    & .list-block .item-content {
+        padding: 0 0.4rem;
+    }
+    & .settings-card {
+        margin-top: 0.5rem;
+    }
+    & .item-inner .item-title {
+        font-size: 0.7rem;
+    }
+    & .item-text {
+        font-size: 0.31rem;
+        line-height: 0.5rem;
+        height: 0.5rem;
+        width: 6rem;
+    }
+    //设置开关按钮位置与大小
+    & .label-switch {
+        width: 2rem;
+    }
+    & .checkbox {
+        width: 1.8rem;
+        height: 1rem;
+        margin-top: 0.3rem;
+    }
+    & .checkbox:after,
+    .checkbox:before {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    & .label-switch {
+        float: right;
+    }
+    & .item-inner input {
+        color: #000000;
+        width: 7.3rem;
+        border: none;
+    }
+    & .item-inner input:first-child {
+        height: 1rem;
+    }
+    & .item-inner input:last-child {
+        height: 0.5rem;
+    }
+    & .repeat-card {
+        margin-top: 1rem;
+    }
+    & .repeat-card .item-title {
+        text-align: center;
+        width: 1.5rem;
+        font-size: 0.55rem;
+        font-weight: bold;
+        float: left;
+        border-right: 0.05rem solid #eee;
+    }
+    & .repeat-card .item-subtitle {
+        float: right;
+        width: 1.2rem;
+        margin-right: 4.8rem;
+        font-size: 0.55rem;
+    }
 }
 
-/*编辑定时*/
-.editTime-content{
-	
+.popup {
+    top: 21%;
+    height: 11.25rem;
+}
+
+.repeatPopup {
+    border-radius: 0.2rem;
+    width: 95%;
+    margin: 0 2.5%;
+    & .list-block {
+        margin: 0rem;
+    }
+    & .list-block .media-list li,
+    .list-block .item-content,
+    .list-block .item-inner {
+        margin: 0;
+        height: 1.25rem;
+        min-height: 0;
+        border-bottom: 0.05rem solid #dfdfdf;
+    }
+    & .item-title {
+        line-height: 1.25rem;
+        font-size: 0.55rem!important;
+    }
+    & .label-checkbox .icon-form-checkbox {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+    & .list-block li:last-child {
+        border-radius: 0 0.5rem;
+        height: 1.25rem;
+        background-color: #efefef;
+    }
+    & button {
+        border: none;
+        height: 1.25rem;
+        float: left;
+        width: 50%;
+    }
+    & button:first-child {
+        border-right: 0.05rem solid #eee;
+    }
+    & .ensureBtn {
+        color: #37a3e7;
+    }
+}
+
+.cancelBtn {
+    color: #000;
+}
+
+.bar + .picker-items {
+    height: 6.5rem;
+}
+
+.picker-columns {
+    height: 6.5rem;
+}
+.picker-items {
+    font-size: 0.85rem;
+}
+.picker-item{
+    height: 0.9rem;
+  line-height: 0.9rem;
+}
+.picker-center-highlight {
+  height: 0.9rem;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 45%;
+  margin-top: -12px;
+  pointer-events: none;
 }

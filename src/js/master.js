@@ -62,9 +62,6 @@ $("#windSpeedBtn").click(function() {
 //     $.actions(groups);
 // });
 //定时开关机
-$("#timeBtn").datetimePicker({
-    value: ['1985', '12', '04', '9', '34']
-});
 
 //重置过滤网
 $("#filterScreenBtn").click(function() {
