@@ -97,10 +97,10 @@
   width: 25%;
   float: left;
 }
-.monitoring-button1 span:hover,
-.monitoring-button2 span:hover,
-.monitoring-button1 div div:hover,
-.monitoring-button2 div div:hover {
+.monitoring-button1 span:active,
+.monitoring-button2 span:active,
+.monitoring-button1 div div:active,
+.monitoring-button2 div div:active {
   background-color: #1aa365;
   color: #fff;
   border: 0.05rem #1aa365 solid;
