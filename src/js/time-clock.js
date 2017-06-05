@@ -9,22 +9,20 @@
          '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期六</div></div> </div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
          '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期日</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
          '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期日</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li></ul></div>'
-         
+
      $.popup(popupHTML);
  };
-//  //显示遮罩层方法
-//  function showOverlay(){
-//     $(".page.page-current").css("opacity","0.1");
-//  }
-// //隐藏遮罩层方法
-// function hideOverlay(){
-//     $(".page.page-current").css("opacity","1");
-//  }
+ //重复按钮弹出星期框
+ $("#open-time").click(function() { 
+    queryRepeat() 
+});
+
+
  //时间编辑器
  /**第一个按钮的时间**/
 
  $("#picker-time1").click(function() {
-    // showOverlay();
+     // showOverlay();
      $("#picker-time1").picker({
          cols: [{
              textAlign: 'center',
@@ -37,16 +35,15 @@
          toolbarTemplate: '<header class="bar bar-nav">\
   <button class="button button-link pull-right close-picker" id="open-time1">确定</button>\
    <button class="button button-link pull-left close-picker">取消</button>\
-  <h1 class="title">请选择时间</h1>\
   </header>',
-         onOpen: function() {
-             $("#open-time1").click(function() { queryRepeat();});
-         }
+         // onOpen: function() {
+         //     $("#open-time1").click(function() { queryRepeat();});
+         // }
      });
 
      $.init();
  });
-/**第二个按钮的时间**/
+ /**第二个按钮的时间**/
  $("#picker-time2").click(function() {
      // showOverlay();
      $("#picker-time2").picker({
@@ -61,11 +58,28 @@
          toolbarTemplate: '<header class="bar bar-nav">\
   <button class="button button-link pull-right close-picker" id="open-time2">确定</button>\
   <button class="button button-link pull-left close-picker">取消</button>\
-  <h1 class="title">请选择时间</h1>\
   </header>',
-         onOpen: function() {
-             $("#open-time2").click(function() { queryRepeat();hideOverlay(); });
-         }
+         // onOpen: function() {
+         //     $("#open-time2").click(function() { queryRepeat();hideOverlay(); });
+         // }
      });
      $.init();
  });
+
+/**清空任务弹出框**/
+//重置过滤网
+$("#emptyBtn").click(function() {
+    $.alert('<div>确定清空定时任务？</div>');
+});
+
+
+
+
+ //  //显示遮罩层方法
+ //  function showOverlay(){
+ //     $(".page.page-current").css("opacity","0.1");
+ //  }
+ // //隐藏遮罩层方法
+ // function hideOverlay(){
+ //     $(".page.page-current").css("opacity","1");
+ //  }
