@@ -13,9 +13,9 @@
      $.popup(popupHTML);
  };
  //重复按钮弹出星期框
- $("#open-time").click(function() { 
-    queryRepeat() 
-});
+ $("#open-time").click(function() {
+     queryRepeat()
+ });
 
 
  //时间编辑器
@@ -66,11 +66,13 @@
      $.init();
  });
 
-/**清空任务弹出框**/
-//重置过滤网
-$("#emptyBtn").click(function() {
-    $.alert('<div>确定清空定时任务？</div>');
-});
+ /**清空任务弹出框以及跳转到清空页面**/
+
+ $("#emptyBtn").click(function() {
+     $.confirm('确定清空定时任务？', function() {
+        location.href='empty-task.html';
+     });
+ });
 
 
 

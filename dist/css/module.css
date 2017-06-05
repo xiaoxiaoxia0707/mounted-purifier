@@ -166,3 +166,22 @@
   line-height: 1.25rem;
   height: 1.25rem;
 }
+/**定时开机的清空任务页面**/
+.empty-content .card {
+  margin: 0;
+  height: 1.5rem;
+  min-height: 0;
+}
+.empty-content span {
+  padding: 0 46%;
+}
+.empty-content .iconfont {
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  color: #b9b9b9;
+}
+.empty-content p {
+  text-align: center;
+  font-size: 0.5rem;
+  color: #b9b9b9;
+}
