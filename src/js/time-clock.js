@@ -36,9 +36,7 @@
   <button class="button button-link pull-right close-picker" id="open-time1">确定</button>\
    <button class="button button-link pull-left close-picker">取消</button>\
   </header>',
-         // onOpen: function() {
-         //     $("#open-time1").click(function() { queryRepeat();});
-         // }
+         
      });
 
      $.init();
@@ -59,9 +57,6 @@
   <button class="button button-link pull-right close-picker" id="open-time2">确定</button>\
   <button class="button button-link pull-left close-picker">取消</button>\
   </header>',
-         // onOpen: function() {
-         //     $("#open-time2").click(function() { queryRepeat();hideOverlay(); });
-         // }
      });
      $.init();
  });
@@ -73,15 +68,3 @@
         location.href='empty-task.html';
      });
  });
-
-
-
-
- //  //显示遮罩层方法
- //  function showOverlay(){
- //     $(".page.page-current").css("opacity","0.1");
- //  }
- // //隐藏遮罩层方法
- // function hideOverlay(){
- //     $(".page.page-current").css("opacity","1");
- //  }
