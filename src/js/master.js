@@ -47,3 +47,9 @@ $("#windSpeedBtn").click(function() {
 $("#filterScreenBtn").click(function() {
     $.alert('<div>重置滤网已经完成</div>');
 });
+// //改变按钮的颜色
+//  $(".monitoring-button1 span").click(function(){
+//     $(".monitoring-button1 span").css(" background-color","#1aa365");
+//     $(".monitoring-button1 span").css("color"," #fff");
+//     $(".monitoring-button1 span").css("border","0.05rem #1aa365 solid");
+// });

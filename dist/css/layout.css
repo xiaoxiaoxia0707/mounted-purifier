@@ -16,7 +16,7 @@
 }
 .binding-content .binding-button {
   width: 8rem;
-  margin: 1rem  auto 0rem ;
+  margin: 1rem auto 0rem;
 }
 .binding-content .binding-button a {
   height: 1.35rem;
@@ -41,7 +41,7 @@
   font-size: 0.5rem;
 }
 .monitoring-content .list-block .item-link .item-inner {
-  padding: 0 ;
+  padding: 0;
   margin: 0;
   line-height: 1rem;
   min-height: 0;
@@ -49,4 +49,46 @@
 }
 .monitoring-content div .item-inner {
   height: 1rem;
+}
+/*设备管理页面*/
+.device-binding-content .binding-list-block {
+  margin: 1rem 0;
+  font-size: 0.5rem;
+}
+.device-binding-content .list-block .item-content,
+.device-binding-content .list-block input[type="text"] {
+  min-height: 1.5rem;
+  height: 1.5rem;
+}
+.device-binding-content .list-block .item-media + .item-inner {
+  margin-left: 0rem;
+}
+.device-binding-content .list-block input[type="text"] {
+  line-height: 1.5rem;
+  font-size: 0.5rem;
+}
+.device-binding-content .list-block .item-title.label {
+  line-height: 1.5rem;
+  min-height: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+}
+.device-binding-content .content-block {
+  margin: 0;
+  padding: 0 0.75rem;
+}
+.device-binding-content .row .col-50:first-child {
+  margin-left: 0;
+}
+.device-binding-content .row .col-50 {
+  margin-left: 8%;
+}
+.device-binding-content .binding-content-block a {
+  height: 1.35rem;
+  line-height: 1.35rem;
+  font-size: 0.5rem;
+  color: #fff;
+}
+.device-binding-content #submitBtn a {
+  background-color: #1ba365;
 }
