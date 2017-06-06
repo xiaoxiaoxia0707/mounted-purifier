@@ -14,9 +14,9 @@
  };
  //重复按钮弹出星期框
  $("#open-time").click(function() {
-     queryRepeat()
- });
+     queryRepeat();
 
+ });
 
  //时间编辑器
  /**第一个按钮的时间**/
