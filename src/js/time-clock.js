@@ -1,21 +1,29 @@
  //重复的按钮的方法
  function queryRepeat() {
      var popupHTML = '<div class="popup repeatPopup"><div class="list-block media-list">' +
-         '<ul><li><a href="#" ><button class="close-popup cancelBtn">取消</button></a><button class="close-popup ensureBtn">确定</button></li><li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row">' +
-         '<div class="item-title">星期一</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li><li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期二</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
-         '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期三</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
-         '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期四</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
-         '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期五</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
-         '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期六</div></div> </div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
-         '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期日</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
-         '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期日</div></div></div><input type="radio" name="my-radio"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li></ul></div>'
-
+         '<ul><li><a href="#" ><button class="close-popup cancelBtn">取消</button></a><button class="close-popup ensureBtn" onclick="fun()">确定</button></li><li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row">' +
+         '<div class="item-title">星期一</div></div></div><input type="checkbox" name="my-radio" value="星期一"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li><li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期二</div></div></div><input type="checkbox" name="my-radio" value="星期二"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
+         '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期三</div></div></div><input type="checkbox" name="my-radio" value="星期三"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
+         '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期四</div></div></div><input type="checkbox" name="my-radio" value="星期四"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
+         '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期五</div></div></div><input type="checkbox" name="my-radio" value="星期五"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
+         '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期六</div></div> </div><input type="checkbox" name="my-radio" value="星期六"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li>' +
+         '<li><label class="label-checkbox item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">星期日</div></div></div><input type="checkbox" name="my-radio" value="星期日"><div class="item-media"><i class="icon icon-form-checkbox"></i></div></label></li></ul></div>'
      $.popup(popupHTML);
+     $("input[name='my-radio']").change(function() {
+         var result = "";
+         $("input[name='my-radio']:checked").each(function() {
+             result += $(this).val() + ',';
+         });
+         if (result != "") {
+             result = result.substring(0, result.lastIndexOf(','));
+         }
+         $(".repeat-input").val(result);
+     });
+
  };
  //重复按钮弹出星期框
  $("#open-time").click(function() {
      queryRepeat();
-
  });
 
  //时间编辑器
@@ -36,7 +44,7 @@
   <button class="button button-link pull-right close-picker" id="open-time1">确定</button>\
    <button class="button button-link pull-left close-picker">取消</button>\
   </header>',
-         
+
      });
 
      $.init();
@@ -65,6 +73,6 @@
 
  $("#emptyBtn").click(function() {
      $.confirm('确定清空定时任务？', function() {
-        location.href='empty-task.html';
+         location.href = 'empty-task.html';
      });
  });

@@ -84,60 +84,42 @@
 .monitoring-button {
   height: 5.5rem;
 }
-.monitoring-button1,
-.monitoring-button2 {
-  width: 100%;
+.monitoring-button div {
+  margin-top: 0.75rem;
   height: 2.25rem;
-  text-align: center;
-  margin: 0.75rem auto 0rem;
-  color: gray;
-}
-.monitoring-button1 div,
-.monitoring-button2 div {
   width: 25%;
   float: left;
 }
-.monitoring-button1 span:active,
-.monitoring-button2 span:active,
-.monitoring-button1 div div:active,
-.monitoring-button2 div div:active {
-  background-color: #1aa365;
-  color: #fff;
-  border: 0.05rem #1aa365 solid;
+.monitoring-button div span {
+  margin: 0 0.5rem;
 }
-.monitoring-button1 .icon,
-.monitoring-button2 .icon {
+.monitoring-button .icon {
+  text-align: center;
   width: 1.35rem;
   height: 1.35rem;
   line-height: 1.35rem;
   border-radius: 50%;
-  border: 0.05rem gray solid;
+  border: 0.05rem #808080 solid;
 }
-.monitoring-button1 #indicateBtn,
-.monitoring-button2 #indicateBtn {
+.monitoring-button #indicateBtn {
   font-size: 0.5rem !important;
 }
-.monitoring-button1 .icon,
-.monitoring-button2 .icon {
+.monitoring-button .icon {
   font-size: 0.75rem!important;
 }
-.monitoring-button1 #filterScreenBtn,
-.monitoring-button2 #filterScreenBtn,
-.monitoring-button1 #timeBtn,
-.monitoring-button2 #timeBtn {
+.monitoring-button #filterScreenBtn,
+.monitoring-button #timeBtn {
   line-height: 1.20rem;
 }
-.monitoring-button1 div div,
-.monitoring-button2 div div {
+.monitoring-button div div {
   font-size: 0.5rem;
   margin-left: 0.55rem;
 }
-.monitoring-button1 a,
-.monitoring-button2 a {
+.monitoring-button a {
   color: gray;
 }
-.monitoring-button1 p,
-.monitoring-button2 p {
+.monitoring-button p {
+  text-align: center;
   font-size: 0.45rem;
   margin: 0.1rem 0 0 0;
 }

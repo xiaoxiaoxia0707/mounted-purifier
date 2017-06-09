@@ -94,29 +94,35 @@
 .monitoring-button {
 	height: 5.5rem;
 }
-.monitoring-button1,
-.monitoring-button2 {
-    width: 100%;
-    height: 2.25rem;
-    text-align: center;
-    margin: 0.75rem auto 0rem;
-    color: gray;
+.monitoring-button {
+    // width: 100%;
+    // height: 2.25rem;
+    // text-align: center;
+    // margin: 0.75rem auto 0rem;
+    // color: gray;
     & div {
+        margin-top: 0.75rem;
+        height: 2.25rem;
         width: 25%;
         float: left;
     }
-    & span:active,
-    div div:active{
-        background-color: #1aa365;
-        color: #fff;
-        border: 0.05rem #1aa365 solid;
+    // & span:active,
+    // div div:active{
+    //     background-color: #1aa365;
+    //     color: #fff;
+    //     border: 0.05rem #1aa365 solid;
+    // }
+    & div span{
+        margin: 0 0.5rem;
     }
+    
     & .icon{
+        text-align:center;
         width: 1.35rem;
         height: 1.35rem;
         line-height: 1.35rem;
         border-radius: 50%;
-        border: 0.05rem gray solid;
+        border: 0.05rem #808080 solid;
     }
     & #indicateBtn{
         font-size: 0.5rem !important;
@@ -135,6 +141,7 @@
     	 color: gray;
     }
     & p {
+         text-align:center;
         font-size: 0.45rem;
         margin: 0.1rem 0 0 0;
     }
