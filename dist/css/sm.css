@@ -642,10 +642,6 @@ a {
     width: 60%;
     margin: 0;
   }
-  .row .col-50 {
-    width: 48%;
-    margin-left: 2%;
-  }
   .row.no-gutter .col-50 {
     width: 50%;
     margin: 0;
